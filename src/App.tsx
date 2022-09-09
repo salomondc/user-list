@@ -48,8 +48,8 @@ const UserList = () => {
       <Typography component="h1" variant="h3" gutterBottom>
         User List
       </Typography>
-      <Typography component="small" variant="caption">
-        from <a target="_blank" rel="noreferrer" href={url}>{url}</a>
+      <Typography sx={{mb: 1, display: 'block'}} component="small" variant="caption">
+        from <a style={{color: '#777'}} target="_blank" rel="noreferrer" href={url}>{url}</a>
       </Typography>
       {users && <SelectUser {...{ users, setUsers, view, setView, url }} />}
       {view && <ViewUser {...{ users, setUsers, view, setView, url}} />}
